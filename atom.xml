@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Victor&#39;s blog</title>
+  
+  <subtitle>My blog</subtitle>
+  <link href="https://zhoucourier.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://zhoucourier.github.io/"/>
+  <updated>2025-04-03T10:48:23.919Z</updated>
+  <id>https://zhoucourier.github.io/</id>
+  
+  <author>
+    <name>Victor</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jupyter Notebook &amp; Jupyter Lab 全方位配置使用指南</title>
+    <link href="https://zhoucourier.github.io/2025/02/04/Jupyter%20Notebook%20&amp;%20Jupyter%20Lab%20%E5%85%A8%E6%96%B9%E4%BD%8D%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
+    <id>https://zhoucourier.github.io/2025/02/04/Jupyter%20Notebook%20&amp;%20Jupyter%20Lab%20%E5%85%A8%E6%96%B9%E4%BD%8D%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</id>
+    <published>2025-02-03T16:00:00.000Z</published>
+    <updated>2025-04-03T10:48:23.919Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、环境准备与核心安装&quot;&gt;一、环境准备与核心安装&lt;/h2&gt;
+&lt;h3 id=&quot;1-1-Anaconda-集成环境（推荐首选）&quot;&gt;1.1 Anaconda 集成环境（推荐首选）&lt;/h3&gt;
+&lt;h4 id=&quot;1-1-1-Anaconda-安装全流程&quot;&gt;1.1.1</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作" scheme="https://zhoucourier.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python虚拟环境配置与使用教程deepseek</title>
+    <link href="https://zhoucourier.github.io/2025/02/02/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://zhoucourier.github.io/2025/02/02/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2025-02-01T16:00:00.000Z</published>
+    <updated>2025-04-03T10:49:25.463Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作" scheme="https://zhoucourier.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TeX Live+VSCode的本地LaTeX配置</title>
+    <link href="https://zhoucourier.github.io/2024/11/30/%E5%85%B3%E4%BA%8ELaTeX/"/>
+    <id>https://zhoucourier.github.io/2024/11/30/%E5%85%B3%E4%BA%8ELaTeX/</id>
+    <published>2024-11-30T12:09:58.000Z</published>
+    <updated>2025-04-03T10:45:49.519Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;两个月前，我把MacTex（TeX</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作" scheme="https://zhoucourier.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>encoding</title>
+    <link href="https://zhoucourier.github.io/2024/09/26/encoding/"/>
+    <id>https://zhoucourier.github.io/2024/09/26/encoding/</id>
+    <published>2024-09-25T16:00:00.000Z</published>
+    <updated>2025-04-03T10:44:21.810Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;hexo clean&lt;/p&gt;
+&lt;p&gt;hexo g -d&lt;/p&gt;
+&lt;p&gt;hexo s&lt;/p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/spoiler.css&quot; type=&quot;text/css&quot;&gt;&lt;script</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作" scheme="https://zhoucourier.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://zhoucourier.github.io/2024/09/26/hello-world/"/>
+    <id>https://zhoucourier.github.io/2024/09/26/hello-world/</id>
+    <published>2024-09-25T16:00:00.000Z</published>
+    <updated>2025-04-03T10:46:23.927Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac 安装Node.js 20 后`node -v` 和 `npm -v`找不到的解决方案</title>
+    <link href="https://zhoucourier.github.io/2024/09/21/node.js%20installation/"/>
+    <id>https://zhoucourier.github.io/2024/09/21/node.js%20installation/</id>
+    <published>2024-09-20T16:00:00.000Z</published>
+    <updated>2025-04-03T11:09:43.746Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;Mac 安装Node.js 20 后&lt;code&gt;node -v&lt;/code&gt; 和 &lt;code&gt;npm -v&lt;/code&gt;找不到的解决方案&lt;/h1&gt;
+&lt;p&gt;根据你提供的信息，我们可以看到 Node.js 20 确实已经成功安装在你的系统上。问题在于它是以</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作" scheme="https://zhoucourier.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于LaTeX尾注</title>
+    <link href="https://zhoucourier.github.io/2024/09/05/%E5%B0%BE%E6%B3%A8/"/>
+    <id>https://zhoucourier.github.io/2024/09/05/%E5%B0%BE%E6%B3%A8/</id>
+    <published>2024-09-04T16:00:00.000Z</published>
+    <updated>2025-04-03T10:50:16.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;edition1&quot;&gt;edition1&lt;/h3&gt;
+&lt;p&gt;要将尾注的数字加上中括号，您可以自定义一个新的脚注命令。这里是一种实现方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在文档的导言区（preamble）添加以下代码：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作" scheme="https://zhoucourier.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>notes_The Python Book_20240418</title>
+    <link href="https://zhoucourier.github.io/2024/04/28/notes_The%20Python%20Book_20240418/"/>
+    <id>https://zhoucourier.github.io/2024/04/28/notes_The%20Python%20Book_20240418/</id>
+    <published>2024-04-27T16:00:00.000Z</published>
+    <updated>2025-04-03T10:48:54.762Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;3-Packages-and-Builtin-Functions&quot;&gt;3.Packages and Builtin Functions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dir(): This function takes in an object and</summary>
+        
+      
+    
+    
+    
+    
+    <category term="操作" scheme="https://zhoucourier.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>Jupyter Notebook & Jupyter Lab 全方位配置使用指南 · Victor's blog</title><meta name="description" content="一、环境准备与核心安装
+1.1 Anaconda 集成环境（推荐首选）
+1.1.1 Anaconda 安装全流程
+
+
+Windows：
+
+访问 Anaconda 官网 下载 .exe 安装包
+双击安装时务必勾选 “Add Anaconda3 to my PATH environment variab"><meta name="og:description" content="一、环境准备与核心安装
+1.1 Anaconda 集成环境（推荐首选）
+1.1.1 Anaconda 安装全流程
+
+
+Windows：
+
+访问 Anaconda 官网 下载 .exe 安装包
+双击安装时务必勾选 “Add Anaconda3 to my PATH environment variab"><meta name="twitter:site" content="Victor's blog"><meta name="twitter:title" content="Jupyter Notebook &amp; Jupyter Lab 全方位配置使用指南"><meta name="twitter:card" content="summary"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div class="container" id="stage"><div class="row"><div class="col-sm-3 col-xs-12 side-container invisible" id="side-bar"><div class="vertical-text site-title"><h3 class="site-title-small" tabindex="-1"><a class="a-title" href="/">a site to share moments and soughts~</a></h3><h1 class="site-title-large" tabindex="-1"><a class="a-title" href="/">Victor's blog</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div class="site-title-links" id="site-nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li><a href="/about/index.html">about</a></li><li class="soc"><a href="https://github.com/zhoucourier" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fa fa-github">&nbsp;</i></a><a href="https://zhoucourier.github.io/atom.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2025&nbsp;<a target="_blank" href="https://zhoucourier.github.io" rel="noopener noreferrer">Victor</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div class="col-sm-9 col-xs-12 main-container invisible" id="main-container"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>Jupyter Notebook &amp; Jupyter Lab 全方位配置使用指南</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2025-02-04</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a class="a-tag" href="/tags/操作/" title="操作">操作</a><span>&nbsp;</span></span></p><p class="post-abstract"><h2 id="一、环境准备与核心安装">一、环境准备与核心安装</h2>
+<h3 id="1-1-Anaconda-集成环境（推荐首选）">1.1 Anaconda 集成环境（推荐首选）</h3>
+<h4 id="1-1-1-Anaconda-安装全流程">1.1.1 Anaconda 安装全流程</h4>
+<ul>
+<li>
+<p><strong>Windows</strong>：</p>
+<ol>
+<li>访问 <a target="_blank" rel="noopener" href="https://www.anaconda.com/products/distribution">Anaconda 官网</a> 下载 <code>.exe</code> 安装包</li>
+<li>双击安装时务必勾选 <strong>“Add Anaconda3 to my PATH environment variable”</strong>（环境变量自动配置）</li>
+<li>安装完成后验证：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda --version</span><br><span class="line">jupyter --version</span><br></pre></td></tr></table></figure>
+<img src="https://docs.anaconda.com/_images/win-install-options.png" alt="Anaconda安装界面截图"></li>
+</ol>
+</li>
+<li>
+<p><strong>macOS/Linux</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载安装脚本</span></span><br><span class="line">wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh</span><br><span class="line"><span class="comment"># 运行安装（全程回车+输入yes）</span></span><br><span class="line">bash Anaconda3-2023.03-Linux-x86_64.sh</span><br><span class="line"><span class="comment"># 激活环境</span></span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="1-1-2-Anaconda-Navigator-图形化启动">1.1.2 Anaconda Navigator 图形化启动</h4>
+<ul>
+<li>打开应用列表中的 <strong>Anaconda Navigator</strong></li>
+<li>点击 <strong>Jupyter Notebook/Lab</strong> 的 “Launch” 按钮<br>
+<img src="https://docs.anaconda.com/_images/nav-launch-jupyterlab.png" alt="Navigator界面"></li>
+</ul>
+<h3 id="1-2-独立安装-Jupyter（非Anaconda用户）">1.2 独立安装 Jupyter（非Anaconda用户）</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建专用环境（避免污染base环境）</span></span><br><span class="line">conda create -n jupyter_env python=3.9</span><br><span class="line">conda activate jupyter_env</span><br><span class="line"><span class="comment"># 核心组件安装</span></span><br><span class="line">conda install -c conda-forge jupyterlab notebook</span><br><span class="line"><span class="comment"># 验证安装</span></span><br><span class="line">jupyter lab --version  <span class="comment"># 应显示 3.x 以上版本</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="二、Jupyter-核心配置详解">二、Jupyter 核心配置详解</h2>
+<h3 id="2-1-配置文件深度定制">2.1 配置文件深度定制</h3>
+<p>生成配置文件并修改：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config</span><br><span class="line">jupyter lab --generate-config</span><br></pre></td></tr></table></figure>
+<p>编辑 <code>~/.jupyter/jupyter_notebook_config.py</code>：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安全增强配置</span></span><br><span class="line">c.NotebookApp.password = <span class="string">&#x27;sha1:your_hashed_password&#x27;</span>  <span class="comment"># 通过jupyter notebook password生成</span></span><br><span class="line">c.NotebookApp.certfile = <span class="string">&#x27;/path/to/your/cert.pem&#x27;</span>     <span class="comment"># HTTPS加密</span></span><br><span class="line">c.NotebookApp.keyfile = <span class="string">&#x27;/path/to/your/key.pem&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 工作目录设置</span></span><br><span class="line">c.NotebookApp.notebook_dir = <span class="string">&#x27;/projects&#x27;</span>  <span class="comment"># 默认工作路径</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 高级设置</span></span><br><span class="line">c.ContentsManager.allow_hidden = <span class="literal">True</span>     <span class="comment"># 显示隐藏文件</span></span><br><span class="line">c.FileContentsManager.delete_to_trash = <span class="literal">False</span>  <span class="comment"># 彻底删除文件</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-2-多环境内核管理">2.2 多环境内核管理</h3>
+<h4 id="2-2-1-将Conda环境添加为Jupyter内核">2.2.1 将Conda环境添加为Jupyter内核</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">conda create -n data_science python=3.8 pandas numpy  <span class="comment"># 创建新环境</span></span><br><span class="line">conda activate data_science</span><br><span class="line">conda install ipykernel  <span class="comment"># 必须安装的核心组件</span></span><br><span class="line">python -m ipykernel install --user --name data_science --display-name <span class="string">&quot;Python 3.8 (Data Science)&quot;</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-2-2-内核管理命令大全">2.2.2 内核管理命令大全</h4>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>查看所有内核</td>
+<td><code>jupyter kernelspec list</code></td>
+</tr>
+<tr>
+<td>删除指定内核</td>
+<td><code>jupyter kernelspec remove kernel_name</code></td>
+</tr>
+<tr>
+<td>更新内核显示名</td>
+<td>修改 <code>/usr/local/share/jupyter/kernels/kernel_name/kernel.json</code></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://miro.medium.com/max/1400/1*Hh8WTW3aKv9t3_3vG5J9XQ.png" alt="内核选择界面"></p>
+<hr>
+<h2 id="三、Jupyter-高级使用技巧">三、Jupyter 高级使用技巧</h2>
+<h3 id="3-1-单元格多输出展示">3.1 单元格多输出展示</h3>
+<h4 id="方法一：交互式Shell模式">方法一：交互式Shell模式</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> IPython.core.interactiveshell <span class="keyword">import</span> InteractiveShell</span><br><span class="line">InteractiveShell.ast_node_interactivity = <span class="string">&quot;all&quot;</span>  <span class="comment"># 自动显示所有表达式结果</span></span><br><span class="line"></span><br><span class="line">x = <span class="number">10</span></span><br><span class="line">y = <span class="number">20</span></span><br><span class="line">x + y  <span class="comment"># 自动显示</span></span><br><span class="line">y / x  <span class="comment"># 自动显示</span></span><br></pre></td></tr></table></figure>
+<h4 id="方法二：显式Display调用">方法二：显式Display调用</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> IPython.display <span class="keyword">import</span> display</span><br><span class="line"></span><br><span class="line">display(<span class="string">&quot;第一次输出&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;第二次输出&quot;</span>)</span><br><span class="line">display(plt.plot([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]))  <span class="comment"># 显示图表</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-2-效率提升技巧">3.2 效率提升技巧</h3>
+<h4 id="3-2-1-魔法命令大全">3.2.1 魔法命令大全</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">%load_ext autoreload    <span class="comment"># 自动重载模块</span></span><br><span class="line">%autoreload <span class="number">2</span>           <span class="comment"># 每次执行都重载</span></span><br><span class="line"></span><br><span class="line">%%time</span><br><span class="line"><span class="comment"># 计算代码块执行时间</span></span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">%debug  <span class="comment"># 进入调试器（在报错后立即使用）</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-2-2-文件操作快捷方式">3.2.2 文件操作快捷方式</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!ls -l  <span class="comment"># 直接执行Shell命令</span></span><br><span class="line">files = !ls *.ipynb  <span class="comment"># 捕获命令输出到变量</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="四、Jupyter-Lab-深度扩展">四、Jupyter Lab 深度扩展</h2>
+<h3 id="4-1-必装扩展推荐">4.1 必装扩展推荐</h3>
+<table>
+<thead>
+<tr>
+<th>扩展名称</th>
+<th>功能</th>
+<th>安装命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jupyterlab-lsp</td>
+<td>智能代码补全</td>
+<td><code>conda install -c conda-forge jupyterlab-lsp</code></td>
+</tr>
+<tr>
+<td>jupyterlab-git</td>
+<td>版本控制集成</td>
+<td><code>conda install -c conda-forge jupyterlab-git</code></td>
+</tr>
+<tr>
+<td>jupyterlab-drawio</td>
+<td>流程图绘制</td>
+<td><code>conda install -c conda-forge jupyterlab-drawio</code></td>
+</tr>
+<tr>
+<td>jupyterlab-toc</td>
+<td>目录生成器</td>
+<td><code>conda install -c conda-forge jupyterlab-toc</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-2-扩展管理全流程">4.2 扩展管理全流程</h3>
+<ol>
+<li>
+<p>安装Node.js（扩展运行依赖）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install -c conda-forge nodejs</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>通过界面管理：</p>
+<ul>
+<li>打开左侧扩展面板（拼图图标）</li>
+<li>搜索 → 安装 → 启用<br>
+<img src="https://jupyterlab.readthedocs.io/en/stable/_images/extensions.png" alt="扩展管理界面"></li>
+</ul>
+</li>
+<li>
+<p>命令行维护：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">jupyter labextension list          <span class="comment"># 查看已安装扩展</span></span><br><span class="line">jupyter labextension update --all  <span class="comment"># 批量更新</span></span><br><span class="line">jupyter lab clean                  <span class="comment"># 清理无效扩展</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<h2 id="五、实战问题解决方案">五、实战问题解决方案</h2>
+<h3 id="5-1-常见报错处理">5.1 常见报错处理</h3>
+<h4 id="问题：启动时提示-“Port-8888-is-already-in-use”">问题：启动时提示 “Port 8888 is already in use”</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查找占用进程</span></span><br><span class="line">lsof -i :8888</span><br><span class="line"><span class="comment"># 终止进程</span></span><br><span class="line"><span class="built_in">kill</span> -9 PID</span><br><span class="line"><span class="comment"># 或指定新端口</span></span><br><span class="line">jupyter lab --port 8889</span><br></pre></td></tr></table></figure>
+<h4 id="问题：扩展安装后不显示">问题：扩展安装后不显示</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重建前端</span></span><br><span class="line">jupyter lab build</span><br><span class="line"><span class="comment"># 检查兼容性</span></span><br><span class="line">jupyter labextension check</span><br></pre></td></tr></table></figure>
+<h3 id="5-2-性能优化方案">5.2 性能优化方案</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在Notebook开头添加：</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> numba <span class="keyword">import</span> jit</span><br><span class="line"></span><br><span class="line"><span class="meta">@jit(<span class="params">nopython=<span class="literal">True</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fast_math</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> x * np.sin(x) ** <span class="number">2</span></span><br><span class="line"></span><br><span class="line">%config Completer.use_jedi = <span class="literal">False</span>  <span class="comment"># 禁用Jedi提升补全速度</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="六、学习资源推荐">六、学习资源推荐</h2>
+<h3 id="6-1-官方文档">6.1 官方文档</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab 官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">IPython 魔法命令大全</a></li>
+</ul>
+<h3 id="6-2-视频教程">6.2 视频教程</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=7wfPqAyYADY">JupyterLab 完整工作流</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.datacamp.com/tutorial/jupyter-notebook-tutorial">数据科学实战案例</a></li>
+</ul>
+<hr>
+<h2 id="附录：快速参考表">附录：快速参考表</h2>
+<table>
+<thead>
+<tr>
+<th>操作场景</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新建Notebook</td>
+<td>Ctrl/Cmd + N</td>
+</tr>
+<tr>
+<td>切换单元格模式</td>
+<td>M → Markdown / Y → Code</td>
+</tr>
+<tr>
+<td>合并单元格</td>
+<td>Shift + M</td>
+</tr>
+<tr>
+<td>搜索命令</td>
+<td>Ctrl/Cmd + Shift + C</td>
+</tr>
+<tr>
+<td>查看函数文档</td>
+<td>Shift + Tab</td>
+</tr>
+<tr>
+<td>分屏显示</td>
+<td>: 拖动标签页到编辑区域</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://jupyterlab.readthedocs.io/en/stable/_images/interface.png" alt="Jupyter Lab界面标注图"></p>
+<hr>
+<p>通过本指南，您将能够：</p>
+<ul>
+<li>🚀 快速搭建企业级Jupyter环境</li>
+<li>🔄 灵活管理多版本Python环境</li>
+<li>🛠️ 定制个性化开发界面</li>
+<li>💡 掌握高效数据分析技巧</li>
+<li>⚡ 解决90%以上常见问题</li>
+</ul>
+<p>建议将本文档作为日常参考手册，遇到具体问题时使用Ctrl+F快速定位解决方案。下一步可尝试将配置导出为Docker镜像，实现环境的一键部署。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script></p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></span><span class="soc"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></span><span class="soc"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=https://zhoucourier.github.io/2025/02/04/Jupyter Notebook &amp; Jupyter Lab 全方位配置使用指南/%20Victor's blog%20Jupyter Notebook &amp; Jupyter Lab 全方位配置使用指南"></a></span></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2025/02/02/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="Python虚拟环境配置与使用教程deepseek">Next post: Python虚拟环境配置与使用教程deepseek&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2025&nbsp;<a target="_blank" href="https://zhoucourier.github.io" rel="noopener noreferrer">Victor</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
